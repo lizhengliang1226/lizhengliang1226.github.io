@@ -12,9 +12,7 @@ title: 李正良                          # the main title
 tagline: 个人博客  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+  我的博客，记录我自己学习java时学的东西的笔记
 
 # fill in the base hostname & protocol for your site, e.g., 'https://username.github.io'
 url: 'http://lizhengliang1226.github.io'
