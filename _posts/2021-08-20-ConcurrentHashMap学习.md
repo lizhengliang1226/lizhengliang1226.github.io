@@ -1228,7 +1228,7 @@ static final <K, V> void setTabAt(ConcurrentHashMap.Node<K, V>[] tab, int i, Con
 
 扩容
 
-![image-20210819171718579](C:\Users\17314\AppData\Roaming\Typora\typora-user-images\image-20210819171718579.png)
+![image-20210819171718579](../assets/img/myimg/image-20210819171718579.png)
 
 进sc<0说明有别人在扩容，需要去帮助扩容，所以先判断扩容操作是不是已经完成了，要是完成了就啥也不做直接退出，要是没完成，就先把sc加1，代表扩容线程又多了一个，然后去协助扩容
 
@@ -1236,7 +1236,7 @@ static final <K, V> void setTabAt(ConcurrentHashMap.Node<K, V>[] tab, int i, Con
 
 
 
-![image-20210819172318090](C:\Users\17314\AppData\Roaming\Typora\typora-user-images\image-20210819172318090.png)
+![image-20210819172318090](../assets/img/myimg/image-20210819172318090.png)
 
 这一步是在自己的扩容任务已经做完了，且没有可以分配的任务了，然后就把sc-1，其实就是减去一个扩容线程，跟上面的sc+1对应，然后判断这个值有没有变：
 
